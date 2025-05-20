@@ -72,9 +72,9 @@ print(get_random_secret_key())
 exit()
 ```
 
----
+<br>
 
-## 📝 Notes
+## Notes
 
 - You **must register your application** on each provider’s developer console:
   - [Google Developers Console](https://console.developers.google.com)
@@ -83,3 +83,5 @@ exit()
   - [X(Twitter) Developer Portal](https://developer.x.com)
 
 - For each provider, you will receive a **Client ID** and **Client Secret**. These are required to enable authentication and must be securely stored.
+
+---
