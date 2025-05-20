@@ -12,3 +12,4 @@ This project is a simple Django application demonstrating Google authentication 
 3. Set up your Google OAuth credentials.
 4. Run migrations and start the server.
 
+<!-- yt cloud with google -->
