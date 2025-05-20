@@ -1,15 +1,28 @@
-#### Video Tutorial for this project
-https://youtu.be/SQ4A7Q6_md8
-<br><br>
+<!-- #### Video Tutorial for this project -->
+<!-- https://youtu.be/SQ4A7Q6_md8 -->
+<!-- git clone https://github.com/andyjud/django-starter.git . && rm -rf .git -->
 
-#### Getting the files
-Download zip file<br> 
-or <br>
-git clone command (need git to be installed) and remove git folder afterwards
+# Django Starter Project
+
+This project demonstrates how to implement **social authentication** in Django using third-party providers like **Google, GitHub, Facebook**, and **Twitter**. It leverages `django-allauth` or similar packages to integrate OAuth2-based login functionality into a Django web application.
+
+---
+
+## Features
+
+- Login via Google, GitHub, Facebook, and Twitter
+- Django admin panel enabled
+- Clean and extensible project structure
+- Basic UI for login/register and homepage
+
+
+### Clone the Repository
+
+Make sure you have Git installed, then run:
+
+```bash
+git clone https://github.com/andyjud/django-starter.git .
 ```
-git clone https://github.com/andyjud/django-starter.git . && rm -rf .git
-```
-<br><br><br>
 
 ## Setup
 
