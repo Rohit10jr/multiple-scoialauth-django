@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.twitter',
+    'allauth.socialaccount.providers.facebook',
 
     # My apps
     'a_home',
@@ -63,12 +66,36 @@ SOCIALACCOUNT_PROVIDERS = {
             'email'
         ],
         'APP': {
-            'client_id': env('CLIENT_ID'),
-            'secret': env('CLIENT_SECRET'),
+            'client_id': env('GOOGLE_CLIENT_ID'),
+            'secret': env('GOOGLE_CLIENT_SECRET'),
         },
         'AUTH_PARAMS': {
             'access_type':'online',
             'prompt':'consent',
+        }
+    }, 
+    'github' :{
+        'APP' :{
+            'client_id': env('GITHUB_CLIENT_ID'),
+            'secret': env('GITHUB_CLIENT_SECRET')
+        },
+        'AUTH_PARAMS' :{
+            'prompt': 'consent'
+        }
+    },
+    # 'twitter': {
+    #     'APP': {
+    #         'client_id': env('TWITTER_CLIENT_ID'),
+    #         'secret': env('TWITTER_CLIENT_SECRET')
+    #     }
+    # }, 
+    'facebook': {
+        'APP': {
+            'client_id': env('FACEBOOK_CLIENT_ID'),
+            'secret': env('FACEBOOK_CLIENT_SECRET')
+        },
+        'AUTH_PARAMS': {
+            'auth_type': 'reauthenticate'
         }
     }
 }
